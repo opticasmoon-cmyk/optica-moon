@@ -88,6 +88,8 @@ footer {
 /* HERO PREMIUM */
 .hero {
   background: linear-gradient(
+ padding: 100px 20px;
+padding-top: 140px;
     rgba(47,79,58,0.85),
     rgba(47,79,58,0.85)
   ),
@@ -245,3 +247,66 @@ h2 {
   width: 90px;
   height: auto;
 }
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(47, 79, 58, 0.95);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  width: 70px;
+  height: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+  opacity: 0.75;
+}
+
+.nav-btn {
+  background-color: #c2a15a;
+  color: #2b2b2b !important;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.nav-menu {
+  gap: 14px;
+  font-size: 0.9em;
+}
+
+.nav-logo img {
+  width: 60px;
+}
+

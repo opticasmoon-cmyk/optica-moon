@@ -10,6 +10,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Óptica Moon">
+    </a>
+<button class="nav-toggle" aria-label="Abrir menú">
+  ☰
+</button>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="armazones.html">Armazones</a></li>
+      <li><a href="lentes-oftalmicos.html">Lentes</a></li>
+      <li><a href="accesorios.html">Accesorios</a></li>
+      <li><a href="https://wa.me/50240503262" class="nav-btn">WhatsApp</a></li>
+    </ul>
+  </div>
+</nav>
 
  <header class="hero">
 <img src="images/logo.png" alt="Óptica Moon" class="logo-top">
@@ -53,6 +72,14 @@
   AOS.init({
     duration: 800,
     once: true
+  });
+</script>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
   });
 </script>
 
